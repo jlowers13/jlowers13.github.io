@@ -1,0 +1,447 @@
+html{
+    height:100%;
+}
+
+body{
+    height:100%;
+    padding:0;
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#myVideo {
+    position: fixed;
+    background-position:center;
+    min-width: 100%;
+    min-height: 100%;
+    align-items: center;
+    justify-content: center;
+    overflow:hidden;
+    z-index: -1;
+  }
+
+.quick-group-container{  
+    display: flex;
+    height: 30px;
+    min-width: 970px;
+    justify-content: space-evenly;
+    background-color: rgb(235, 28, 28);
+    color: white;
+    z-index: 2;
+}
+
+.quick-icon{
+    vertical-align: middle;
+}
+
+.quick-group{
+    margin: auto 0 auto 0;
+}
+
+.logo-bar{
+    display:flex;
+    justify-content: space-evenly;
+    background-color: white;
+    min-width: 970px;
+}
+
+.navbar{
+    display:flex;
+    justify-content: center;
+    background-color: rgb(64, 61, 207);
+    height: 50px;
+    min-width: 970px;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn{
+    background-color: rgb(32, 30, 117);
+}
+
+.highlight{
+    background-color: rgb(32, 30, 117);
+}
+
+.dropdown{
+    text-decoration: none;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 50px;
+    width: 25%;
+    min-width: 110px;
+    color:white;
+    font-size: 1.3rem;
+    overflow:hidden;
+}
+
+.dropdown .dropbtn{
+    display: inherit;
+    border: none;
+    outline: none;
+    background-color: inherit;
+    font-family: inherit;
+    color:white;
+    font-size: 1.3rem;
+    text-decoration: none;
+}
+
+.dropdown-column{
+    float: left;
+    padding: 10px;
+    background-color: white;
+}
+
+.dropdown-cat{
+    margin: 0;
+    padding: 0;
+    font-weight: 700;
+    letter-spacing: .1em;
+    border-bottom: 1px solid rgb(122, 122, 122);
+    color: rgba(0, 0, 0, 0.897);
+    text-align: center;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    z-index: 1;
+    background-color: rgb(240, 240, 240);
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 0px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+.arrow {
+    border: solid rgb(255, 255, 255);
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    vertical-align: middle;
+    margin-bottom: 2px;
+  }
+  .up {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+  }
+  .down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+  }
+
+.noselect { 
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+     user-select: none;
+ } 
+
+.parallax-window{
+    min-width: 970px;
+    height: 200px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.about-us-title{
+    letter-spacing: .1em;
+    padding-top: 60px;
+    text-align: center;
+    color: white;
+    font-size: 3.5em;
+    font-weight: 700;
+}
+
+.title-line{
+    height: 10px;
+    width: 120px;
+    margin: 5px auto auto auto;
+}
+
+.about-us-header{
+    font-size: 3em;
+    font-weight: 700;
+}
+
+.contact-us-column{
+    flex: 50%;
+    margin: 20px 20px 20px 20px;
+}
+
+.column{
+    flex: 50%;
+    margin: auto;
+}
+
+.row{ 
+    display: flex;
+    width: 1000px;
+    height: 350px;
+    margin: auto;
+}
+
+.about-us-desc{
+    font-size: 1.2em;
+    line-height: 2em;
+}
+
+.about-us-cert-header{
+    min-width: 970px;
+    text-align: center;
+    font-size: 2em;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.banner{
+    display: flex;
+    width: 40%;
+    height: 300px;
+    text-align: right;
+    margin: 80px auto 80px 0;
+    justify-content: space-evenly;
+    background-color: rgba(64, 61, 207, 0.9);
+    flex-direction: column;
+    min-width: 500px;
+    
+}
+
+.banner-text{
+    font-style: italic;
+    padding-right: 4%;
+    font-size: 3em;
+    color:rgb(255, 255, 255);
+}
+
+
+.logos{
+    padding-top: 10px;
+    text-align: right;
+}
+
+.vertical{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    background-color: white;
+    min-height:500px;
+    min-width: 970px;
+}
+
+.vertical-product{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    background-color: white;
+    min-width: 970px;
+}
+
+.our-brands{
+    background-color: rgb(228, 228, 228);
+}
+
+
+/* See the value here */
+.horizontal{
+    display: inline-flex;
+    flex-direction: row;
+    margin: 10px;
+    justify-content: center;
+}
+
+.r {
+    color: rgb(235, 28, 28);
+}
+
+.w{
+    color: rgb(255, 255, 255);
+}
+
+.b{
+    color: rgb(64, 61, 207);
+}
+
+.g{
+    color: rgba(170, 170, 170, 0.5);
+}
+
+.z{
+    color: rgb(66, 51, 107);
+}
+
+.br {
+    background-color: rgba(235, 28, 28);
+}
+
+.bw{
+    background-color: rgb(255, 255, 255);
+}
+
+.bb{
+    background-color: rgb(64, 61, 207);
+}
+.bg{
+    background-color: rgba(170, 170, 170, 0.5);
+}
+.bc{
+    background-color: rgb(240, 240, 240);
+}
+
+.shadow{
+    -webkit-box-shadow: 0px 5px 18px -3px rgba(0,0,0,1);
+    -moz-box-shadow: 0px 5px 18px -3px rgba(0,0,0,1);
+    box-shadow: 0px 5px 18px -3px rgba(0,0,0,1);
+}
+
+.title-container{
+    display: inline-block;
+}
+
+.title{
+    letter-spacing: .1em;
+    display: inline-block;
+    margin: 60px 5px 20px 5px;
+    padding: 15px 40px 15px 40px;
+    font-size: 4em;
+    font-weight: bold;
+}
+
+.offer{
+    display:inline-block;
+    height:500px;
+    width: 330px;
+    margin: 0px 10px 40px 10px;
+    -webkit-box-shadow: 0px 5px 18px -3px rgba(0,0,0,1);
+    -moz-box-shadow: 0px 5px 18px -3px rgba(0,0,0,1);
+    box-shadow: 0px 5px 18px -3px rgba(0,0,0,1);
+}
+
+.cert{
+    display: inline-block;
+    text-align: center;
+    
+    height:410px;
+    width: 330px;
+    min-width: 330px;
+    margin: 0px 5px 40px 5px;
+    -webkit-box-shadow: 0px 5px 18px -3px rgba(0,0,0,1);
+    -moz-box-shadow: 0px 5px 18px -3px rgba(0,0,0,1);
+    box-shadow: 0px 5px 18px -3px rgba(0,0,0,1);
+}
+
+.offer-image{
+    margin: 20px 0 20px 0 ;
+}
+
+.big-text-offer{
+    font-size: 1.2em;
+    font-weight: 600;
+    text-align: left;
+    margin-left: 20px;
+}
+
+.offer-text{
+    text-align: left;
+    margin: 0 20px 0 20px;
+    
+    line-height: 1.5em;
+}
+
+.brand-container{
+    width: 100%;
+    margin-bottom: 60px;
+}
+
+.brand{
+    display: inline-flex;
+    width: 175px;
+    height: 175px;
+    background-color: white;
+    margin: 10px 10px 10px 10px;
+
+    -webkit-box-shadow: 0px 5px 18px -3px rgba(0,0,0,1);
+    -moz-box-shadow: 0px 5px 18px -3px rgba(0,0,0,1);
+    box-shadow: 0px 5px 18px -3px rgba(0,0,0,1);
+}
+
+.brand-image{
+    height: 100%;
+    width: 100%;
+}
+
+.contact-us{
+    display: inline-block;
+    justify-content: center;
+    list-style: none;
+    text-align: left;
+    line-height: .7em;
+    width: 800px;
+    margin: auto;
+    margin-bottom: 110px;
+}
+
+.contact-us-space{
+    margin-bottom: 50px;
+}
+
+.big-text{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.address-text{
+    font-size: 1em;
+}
+
+.phone-email-text{
+    font-size: 1.5em;
+}
+
+.line{
+    display: inline-block;
+    text-align: center;
+    height: 3px;
+    width: 12%;
+}
+
+.footer{
+    margin: auto;
+}
+
+.map-container{
+    margin: 20px 20px 40px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+#myBtn {
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: red; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+  }
+  
+  #myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+  }
