@@ -343,6 +343,7 @@ body{
 .cert{
     display: inline-block;
     text-align: center;
+    vertical-align:top;
     height:410px;
     width: 330px;
     margin: 0px 5px 40px 5px;
