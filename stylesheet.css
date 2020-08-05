@@ -177,20 +177,31 @@ body{
 }
 
 .contact-us-column{
-    flex: 50%;
-    margin: 20px 20px 20px 20px;
+    display: inline-block;
+    margin: 20px 0px 20px 20px;
 }
-
+.contact-us-column2{
+    display: inline-block;
+    padding-left: 140px;
+    padding-right: -140px;
+    margin: 20px 0px 20px 20px;
+}
 .column{
-    flex: 50%;
     margin: auto;
+    padding-left: 20px;
+    max-width: 500px;
 }
-
+.column2{
+    margin: auto;
+    padding-right: 20px;
+    max-width: 500px;
+}
 .row{ 
     display: flex;
-    width: 1000px;
     height: 350px;
+    max-width: 1200px;
     margin: auto;
+    min-width: 800px;
 }
 
 .about-us-desc{
@@ -256,7 +267,7 @@ body{
 
 /* See the value here */
 .horizontal{
-    display: inline-flex;
+    display: inline-block;
     flex-direction: row;
     margin: 10px;
     justify-content: center;
