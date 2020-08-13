@@ -332,6 +332,7 @@ body{
 
 .offer{
     display:inline-block;
+    vertical-align: top;
     height:500px;
     width: 330px;
     margin: 0px 10px 40px 10px;
