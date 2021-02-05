@@ -74,6 +74,9 @@ body{
 }
 
 .dropdown .dropbtn{
+    /* margin: auto; */
+    width: 100%;
+    height: 100%;
     display: inherit;
     border: none;
     outline: none;
